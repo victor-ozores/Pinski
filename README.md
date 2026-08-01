@@ -26,6 +26,10 @@ O dashboard entrega 3 páginas — Vendas, Devoluções e Simulação — com 13
 
 [![Power BI](https://img.shields.io/badge/Power%20BI-Abrir%20Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiOGNjNjFmZDItOThiNi00OWFiLTg4Y2YtYzAwNzEwM2FiYzY4IiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9&pageName=b2ef2f6eecd6003e150c)
 
+## 📢 Apresentação do Projeto
+
+[![Gamma App](https://img.shields.io/badge/Gamma%20App-Ver%20Apresentação-4338CA?style=for-the-badge)](https://gamma.app/docs/PINSKI-Camisas-Floridas-Diagnostico-de-Vendas-e-Devolucoes-wncniz2k36l6trs)
+
 ---
 
 ## 💡 O Que Ele Responde
@@ -40,23 +44,26 @@ O dashboard entrega 3 páginas — Vendas, Devoluções e Simulação — com 13
 
 ## 📊 Páginas do Dashboard
 
-| Página | O que entrega |
-|--------|---------------|
-| **Vendas** | KPIs de faturamento, ticket médio, quantidade vendida e % de faturamento online; evolução mensal com variação MoM; ranking de produtos, lojas e faixa etária |
+| Página         | O que entrega                                                                                                                                                              |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Vendas**     | KPIs de faturamento, ticket médio, quantidade vendida e % de faturamento online; evolução mensal com variação MoM; ranking de produtos, lojas e faixa etária               |
 | **Devoluções** | KPIs de valor e quantidade devolvida, ticket médio de devolução e concentração por perfil de cliente; taxa de devolução mensal e por categoria, com drill-down até produto |
-| **Simulação** | Simulador interativo: reduz a taxa de devolução de um produto filtrado via slicer e calcula o Lucro Extra resultante, com gauge comparando taxa atual vs. simulada |
+| **Simulação**  | Simulador interativo: reduz a taxa de devolução de um produto filtrado via slicer e calcula o Lucro Extra resultante, com gauge comparando taxa atual vs. simulada         |
 
 ---
 
 ## 📸 Preview
 
 ### Vendas
+
 ![Vendas](./assets/vendas.png)
 
 ### Devoluções
+
 ![Devoluções](./assets/devolucoes.png)
 
 ### Simulação
+
 ![Simulação](./assets/simulacao.png)
 
 ---
@@ -102,36 +109,36 @@ Diferente de outros projetos do autor, este dashboard não possui camada SQL int
 
 **134 medidas** organizadas em display folders por domínio:
 
-| Pasta | Qtd. | Conteúdo |
-|-------|------|----------|
-| `Vendas\Calculos` | 16 | Faturamento, Ticket Médio, Quantidade Vendida, % Online, descontos, MoM, PY |
-| `Vendas\Eixo` | 6 | Teto de eixo Y por produto, tamanho, loja, faixa etária, mês |
-| `Vendas\Imagens` | 4 | Cards KPI em SVG (Faturamento, Ticket Médio, Quantidade Vendida, % Online) |
-| `Vendas\Cores` / `Vendas\Rotulos` | 2 | Cor condicional e rótulo dinâmico do gráfico mensal |
-| `Devolucoes\Calculos` | 14 | Valor e taxa de devolução, ticket médio de devolução, perfil líder |
-| `Devolucoes\Eixo` | 4 | Teto de eixo Y por loja, produto, faixa etária, mês |
-| `Devolucoes\Imagens` | 5 | Cards KPI e gauge de taxa de devolução em SVG |
-| `Devolucoes\Rotulos` | 1 | Título dinâmico de concentração de perfil |
-| `Simulador\Calculos` | 6 | Faturamento realizado/simulado, taxa simulada, Lucro Extra |
-| `Simulador\Eixo` / `Cores` / `Imagens` / `Rotulos` | 8 | Gauge de taxa simulada e rótulos de contexto do produto filtrado |
-| `Config\Cores` | 12 | Paleta de cores global (`Cfg Cor *`) propagada a todos os SVGs |
-| `Config\Cards SVG` | 26 | Posicionamento, tamanho e cor de cada elemento do card KPI em SVG |
-| `Config\Gauge SVG` | 15 | Geometria e cor do gauge semicircular |
-| `Config\Donut SVG` | 13 | Geometria e cor do donut (reservado para uso futuro) |
-| `Config\Tooltip` | 1 | Medida auxiliar de gatilho de hover para tooltips em cards de imagem |
-| *(sem pasta)* | 1 | `Valor Reducao Taxa Devolucao` — parâmetro do slicer do Simulador, na tabela `Reducao Taxa Devolucao` |
+| Pasta                                              | Qtd. | Conteúdo                                                                                              |
+| -------------------------------------------------- | ---- | ----------------------------------------------------------------------------------------------------- |
+| `Vendas\Calculos`                                  | 16   | Faturamento, Ticket Médio, Quantidade Vendida, % Online, descontos, MoM, PY                           |
+| `Vendas\Eixo`                                      | 6    | Teto de eixo Y por produto, tamanho, loja, faixa etária, mês                                          |
+| `Vendas\Imagens`                                   | 4    | Cards KPI em SVG (Faturamento, Ticket Médio, Quantidade Vendida, % Online)                            |
+| `Vendas\Cores` / `Vendas\Rotulos`                  | 2    | Cor condicional e rótulo dinâmico do gráfico mensal                                                   |
+| `Devolucoes\Calculos`                              | 14   | Valor e taxa de devolução, ticket médio de devolução, perfil líder                                    |
+| `Devolucoes\Eixo`                                  | 4    | Teto de eixo Y por loja, produto, faixa etária, mês                                                   |
+| `Devolucoes\Imagens`                               | 5    | Cards KPI e gauge de taxa de devolução em SVG                                                         |
+| `Devolucoes\Rotulos`                               | 1    | Título dinâmico de concentração de perfil                                                             |
+| `Simulador\Calculos`                               | 6    | Faturamento realizado/simulado, taxa simulada, Lucro Extra                                            |
+| `Simulador\Eixo` / `Cores` / `Imagens` / `Rotulos` | 8    | Gauge de taxa simulada e rótulos de contexto do produto filtrado                                      |
+| `Config\Cores`                                     | 12   | Paleta de cores global (`Cfg Cor *`) propagada a todos os SVGs                                        |
+| `Config\Cards SVG`                                 | 26   | Posicionamento, tamanho e cor de cada elemento do card KPI em SVG                                     |
+| `Config\Gauge SVG`                                 | 15   | Geometria e cor do gauge semicircular                                                                 |
+| `Config\Donut SVG`                                 | 13   | Geometria e cor do donut (reservado para uso futuro)                                                  |
+| `Config\Tooltip`                                   | 1    | Medida auxiliar de gatilho de hover para tooltips em cards de imagem                                  |
+| _(sem pasta)_                                      | 1    | `Valor Reducao Taxa Devolucao` — parâmetro do slicer do Simulador, na tabela `Reducao Taxa Devolucao` |
 
 **7 User Defined Functions (DAX Preview):**
 
-| UDF | O que faz |
-|-----|-----------|
-| `fxFormatoMoeda(Valor)` | Escala automática por magnitude: `R$ 0` / `R$ 8.722` / `R$ 65,0K` / `R$ 6,0M` |
-| `fxFormatoRotulo(Valor)` | Igual, sem prefixo `R$` — para rótulos de gráficos |
-| `fxEixoMax(Valor, Buffer)` | Teto do eixo Y arredondado com buffer percentual |
-| `fxEixoMin(Valor, Buffer)` | Piso do eixo Y para valores negativos |
-| `fxSvgMontarCard(...)` | Gera SVG de card KPI com ícone, seta de variação e subtexto contextual |
-| `fxSvgMontarDonut(...)` | Gera SVG de donut com segmentos e legenda |
-| `fxSvgMontarGauge(...)` | Gera SVG de gauge semicircular (usado nas páginas Devoluções e Simulação) |
+| UDF                        | O que faz                                                                     |
+| -------------------------- | ----------------------------------------------------------------------------- |
+| `fxFormatoMoeda(Valor)`    | Escala automática por magnitude: `R$ 0` / `R$ 8.722` / `R$ 65,0K` / `R$ 6,0M` |
+| `fxFormatoRotulo(Valor)`   | Igual, sem prefixo `R$` — para rótulos de gráficos                            |
+| `fxEixoMax(Valor, Buffer)` | Teto do eixo Y arredondado com buffer percentual                              |
+| `fxEixoMin(Valor, Buffer)` | Piso do eixo Y para valores negativos                                         |
+| `fxSvgMontarCard(...)`     | Gera SVG de card KPI com ícone, seta de variação e subtexto contextual        |
+| `fxSvgMontarDonut(...)`    | Gera SVG de donut com segmentos e legenda                                     |
+| `fxSvgMontarGauge(...)`    | Gera SVG de gauge semicircular (usado nas páginas Devoluções e Simulação)     |
 
 ---
 
@@ -158,16 +165,16 @@ O card de Lucro Extra e o gauge de Taxa Simulada respondem em tempo real à sele
 
 ### Padrões Aplicados
 
-| Padrão | Por quê |
-|--------|---------|
-| Nomenclatura SQLBI: `Fact_`, `Dim_`, `_Medidas` | Modelo autoexplicativo — qualquer analista entende a estrutura ao abrir |
-| `VAR/RETURN` em todas as medidas não triviais | Evita calcular a mesma expressão duas vezes e facilita leitura |
-| `DIVIDE()` onde denominador pode ser zero ou BLANK | Retorna BLANK em vez de erro — preserva a otimização de células vazias do VertiPaq |
-| `FILTER(ALL())` em vez de `FILTER(table)` | Evita iteração desnecessária quando um predicado booleano já resolve |
-| Chaves de relacionamento sempre inteiras | Evita GUIDs/strings como chave — melhora a codificação VertiPaq |
-| Date Table marcada + Auto date/time desabilitado | Garante que as funções de time intelligence funcionem corretamente |
-| `Remove Other Columns` no Power Query | Protege o pipeline — se a fonte adicionar colunas, o refresh não quebra |
-| Medidas nunca retornam `0` por padrão (`DIVIDE` sem terceiro argumento) | Preserva BLANK, evitando poluir visuais com zeros artificiais |
+| Padrão                                                                  | Por quê                                                                            |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Nomenclatura SQLBI: `Fact_`, `Dim_`, `_Medidas`                         | Modelo autoexplicativo — qualquer analista entende a estrutura ao abrir            |
+| `VAR/RETURN` em todas as medidas não triviais                           | Evita calcular a mesma expressão duas vezes e facilita leitura                     |
+| `DIVIDE()` onde denominador pode ser zero ou BLANK                      | Retorna BLANK em vez de erro — preserva a otimização de células vazias do VertiPaq |
+| `FILTER(ALL())` em vez de `FILTER(table)`                               | Evita iteração desnecessária quando um predicado booleano já resolve               |
+| Chaves de relacionamento sempre inteiras                                | Evita GUIDs/strings como chave — melhora a codificação VertiPaq                    |
+| Date Table marcada + Auto date/time desabilitado                        | Garante que as funções de time intelligence funcionem corretamente                 |
+| `Remove Other Columns` no Power Query                                   | Protege o pipeline — se a fonte adicionar colunas, o refresh não quebra            |
+| Medidas nunca retornam `0` por padrão (`DIVIDE` sem terceiro argumento) | Preserva BLANK, evitando poluir visuais com zeros artificiais                      |
 
 ---
 
